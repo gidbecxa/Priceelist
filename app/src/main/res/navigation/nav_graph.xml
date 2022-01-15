@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/savedListsFragment">
+
+    <fragment
+        android:id="@+id/savedListsFragment"
+        android:name="com.example.priceelist.SavedListsFragment"
+        android:label="fragment_saved_lists"
+        tools:layout="@layout/fragment_saved_lists" >
+        <action
+            android:id="@+id/action_savedListsFragment_to_makeListFragment"
+            app:destination="@id/makeListFragment" />
+        <action
+            android:id="@+id/action_savedListsFragment_to_menuDialogFragment"
+            app:destination="@id/menuDialogFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/makeListFragment"
+        android:name="com.example.priceelist.MakeListFragment"
+        android:label="fragment_make_list"
+        tools:layout="@layout/fragment_make_list" >
+        <argument
+            android:name="item_id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_makeListFragment_to_savedListsFragment"
+            app:destination="@id/savedListsFragment"
+            app:popUpTo="@id/savedListsFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <dialog
+        android:id="@+id/menuDialogFragment"
+        android:name="com.example.priceelist.MenuDialogFragment"
+        android:label="fragment_menu_dialog_"
+        tools:layout="@layout/fragment_menu_dialog_" >
+        <argument
+            android:name="item_id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_menuDialogFragment_to_savedListsFragment"
+            app:destination="@id/savedListsFragment" />
+    </dialog>
+</navigation>

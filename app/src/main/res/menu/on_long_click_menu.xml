@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_copy"
+        android:title="@string/make_copy"
+        android:titleCondensed="Copy"
+        android:icon="@drawable/ic_file_duplicate"
+        app:showAsAction="ifRoom|withText"
+        android:orderInCategory="@integer/order_1"
+        android:iconTint="@color/gray_dark"
+        tools:targetApi="o"
+        android:enabled="false"/>
+
+    <item android:id="@+id/menu_delete"
+        android:title="@string/menu_delete"
+        android:titleCondensed="Delete"
+        android:icon="@drawable/ic_trash"
+        app:showAsAction="ifRoom|withText"
+        android:orderInCategory="@integer/order_2"
+        android:iconTint="@color/gray_dark"
+        tools:targetApi="o" />
+
+    <item android:id="@+id/menu_share"
+        android:title="@string/menu_share"
+        android:titleCondensed="Share"
+        android:icon="@drawable/ic_share"
+        app:showAsAction="ifRoom|withText"
+        android:orderInCategory="@integer/order_3"
+        android:iconTint="@color/gray_dark"
+        tools:targetApi="o"
+        android:enabled="false"/>
+
+    <item android:id="@+id/menu"
+        android:title="@string/calculate_total"
+        android:titleCondensed="Total"
+        app:showAsAction="never|withText"
+        android:orderInCategory="@integer/order_4"
+        android:enabled="false"/>
+
+</menu>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/between_lists"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/id_circle" />
+
+    <TextView
+        android:id="@+id/list_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/primary2"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="@id/imageView"
+        app:layout_constraintTop_toTopOf="@id/imageView"
+        tools:text="Pl" />
+
+
+    <TextView
+        android:id="@+id/list_title"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center_vertical"
+        android:textColor="@color/gray_dark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/list_total"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Priceelist 14082021" />
+
+    <TextView
+        android:id="@+id/list_total"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="@dimen/between_lists"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center_vertical|end"
+        android:textColor="@color/gray_dark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="$99,999,999.99" />
+
+    <TextView
+        android:id="@+id/list_date"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="@dimen/margin_btw_texts"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/gray_001"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@id/list_title"
+        tools:text="Aug 13, 2021" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/saved"
+        android:textColor="@color/gray_001"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/list_title"
+        app:layout_constraintTop_toBottomOf="@id/list_title" />
+
+    <!--    The divider below could be implemented to create a visible separation
+            between lists (in case where the card view is not used)-->
+    <!-- <View
+         android:id="@+id/divider17"
+         android:layout_width="match_parent"
+         android:layout_height="8dp"
+         android:background="@color/white"
+         app:layout_constraintTop_toBottomOf="@id/list_date"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

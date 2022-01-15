@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Priceelist</string>
+    <string name="total_amount">"%s"</string>
+    <string name="title">Title</string>
+    <string name="amount_hint">Price/qty</string>
+    <string name="list_item_hint">List item</string>
+    <string name="total_button">Total</string>
+    <string name="unit_hint">Qty</string>
+    <string name="make_list">Make a list</string>
+    <string name="done">Done!</string>
+    <string name="sn1">1.</string>
+    <string name="sn2">2.</string>
+    <string name="sn3">3.</string>
+    <string name="sn4">4.</string>
+    <string name="sn5">5.</string>
+    <string name="sn6">6.</string>
+    <string name="sn7">7.</string>
+    <string name="sn8">8.</string>
+    <string name="sn9">9.</string>
+    <string name="sn10">10.</string>
+    <string name="sn11">11.</string>
+    <string name="sn12">12.</string>
+    <string name="sn13">13.</string>
+    <string name="sn14">14.</string>
+    <string name="sn15">15.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="up_button">back</string>
+    <string name="saved_lists">Your saved lists</string>
+    <string name="saved">Saved:</string>
+    <string name="create_invoice">Create an invoice</string>
+    <string name="make_copy">Make a copy</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_share">Share</string>
+    <string name="calculate_total">Calculate Total</string>
+    <string name="delete_question">Are you sure you want to delete this list?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="download">Download</string>
+</resources>

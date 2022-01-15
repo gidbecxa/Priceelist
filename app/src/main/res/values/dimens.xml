@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">8dp</dimen>
+    <dimen name="margin_2">12dp</dimen>
+    <dimen name="margin_top_recycler">8dp</dimen>
+    <dimen name="margin_btw_texts">8dp</dimen>
+    <dimen name="between_lists">4dp</dimen>
+    <dimen name="id_circle_margin">16dp</dimen>
+    <dimen name="box_corner_radius">8dp</dimen>
+    <dimen name="list_item_spacing">16dp</dimen>
+    <dimen name="list_item_spacing_half">8dp</dimen>
+    <dimen name="bottom_sheet_1">8dp</dimen>
+    <dimen name="bottom_sheet_2">4dp</dimen>
+</resources>
